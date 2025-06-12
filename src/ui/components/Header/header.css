@@ -1,0 +1,38 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.header-title {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.header-toolbar {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.header-toolbar button,
+.toolbar-btn {
+  background-color: #2e2e2e;
+  color: #e0e0e0;
+  border: 1px solid #444;
+  padding: 0.3rem 0.7rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.toolbar-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.selected-file {
+  width: 250px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

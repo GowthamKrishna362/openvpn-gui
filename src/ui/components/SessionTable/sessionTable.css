@@ -1,0 +1,56 @@
+.session-table {
+  max-height: calc(90vh - 300px);
+  overflow: auto;
+}
+.table-heading {
+  font-size: 1rem;
+}
+
+.session-loading {
+  padding: 1rem;
+  color: #999;
+}
+
+.session-list {
+  padding: 0;
+  margin: 0;
+}
+
+.session-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  padding: 1rem;
+  border-radius: 6px;
+  background-color: #2e2e2e;
+}
+
+.session-info {
+  max-width: 85%;
+  overflow: hidden;
+}
+
+.session-info-title {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.session-info-subtitle {
+  font-size: 0.85rem;
+  color: #ccc;
+}
+
+.session-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.session-btn {
+  background-color: #2e2e2e;
+  color: #e0e0e0;
+  border: 1px solid #444;
+  padding: 0.3rem 0.7rem;
+  border-radius: 4px;
+  cursor: pointer;
+}

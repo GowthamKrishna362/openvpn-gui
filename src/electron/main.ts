@@ -1,9 +1,14 @@
 import { app, BrowserWindow } from "electron";
 import path from "path";
-import { isDev } from "./util.js";
+import { isDev } from "./util/index.js";
 import { getPreloadPath } from "./pathResolver.js";
-import { getSessionsList, pauseSession, resumeSession } from "./vpn/openvpn.js";
+import {
+  getSessionsList,
+  manageSession,
+  startSession,
+} from "./util/openvpn.js";
 import { ipcHandleAsync } from "./util/index.js";
+import { selectOvpnFile } from "./util/file.js";
 
 app.on("ready", () => {
   const mainWindow = new BrowserWindow({
@@ -18,6 +23,7 @@ app.on("ready", () => {
   }
 
   ipcHandleAsync("getSessionsList", getSessionsList);
-  ipcHandleAsync("pauseSession", pauseSession);
-  ipcHandleAsync("resumeSession", resumeSession);
+  ipcHandleAsync("manageSession", manageSession);
+  ipcHandleAsync("selectOvpnFile", selectOvpnFile);
+  ipcHandleAsync("startSession", startSession);
 });
