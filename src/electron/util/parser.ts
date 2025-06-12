@@ -1,5 +1,3 @@
-import type { OpenVPNSession } from "../types/vpn.js";
-
 export function parseSessionListOutput(output: string): OpenVPNSession[] {
   const lines = output
     .split("\n")
