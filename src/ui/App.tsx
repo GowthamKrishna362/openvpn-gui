@@ -49,10 +49,9 @@ export default function App() {
     try {
       const res = await window.electron.manageSession({ sessionPath, type });
       setLogs(res);
+      fetchSessions(true);
     } catch (e) {
       handleError(e);
-    } finally {
-      fetchSessions(true);
     }
   };
 
@@ -66,11 +65,11 @@ export default function App() {
         filePath: ovpnFilePath,
       });
       setLogs(res);
+      fetchSessions(true);
     } catch (e) {
       handleError(e);
     } finally {
       setIsSessionStarting(false);
-      fetchSessions(true);
     }
   };
 
