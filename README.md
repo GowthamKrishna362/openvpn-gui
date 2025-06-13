@@ -1,4 +1,5 @@
-A simple GUI for starting, and controlling openvpn3 sessions
+A simple GUI for starting, and controlling openvpn3 sessions.
+
 Built using ElectronJS (sorry :(, one day i will dive into GTK or QT ) and Typescript
 
 
