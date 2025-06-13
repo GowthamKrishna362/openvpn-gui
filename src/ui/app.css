@@ -2,8 +2,12 @@
   flex-grow: 1;
   display: flex;
   flex-direction: column;
-  padding: 1rem 2rem;
-  font-family: sans-serif;
+  padding: 2rem;
+  font-family: inherit;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .content-display {
@@ -12,4 +16,9 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  gap: 2rem;
+  background-color: var(--bg-secondary);
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 1px solid var(--border-color);
 }
