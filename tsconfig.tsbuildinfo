@@ -1,1 +1,1 @@
-{"root":["./src/ui/App.tsx","./src/ui/main.tsx","./src/ui/vite-env.d.ts"],"errors":true,"version":"5.8.3"}
+{"root":["./src/ui/App.tsx","./src/ui/main.tsx","./src/ui/vite-env.d.ts","./src/ui/components/Header/index.tsx","./src/ui/components/LogDisplay/index.tsx","./src/ui/components/SessionTable/index.tsx"],"version":"5.8.3"}
